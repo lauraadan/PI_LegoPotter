@@ -1,3 +1,6 @@
+/*  No se aplica reseteo de los márgenes, ni fuentes etc dado que esta seccion ya está vinculada a la hoja de estilos 
+principal (style.css) que define todos los estilos principales de cada pagina */
+
 #zonaMedia
 {
     height: auto;
@@ -19,7 +22,7 @@
 
 #zonaMedia img, svg
 {
-    height: 100% !important;
+    height: 300px !important;
 }
 
 /* Botones "Ver video" */
@@ -113,6 +116,10 @@
     .card-body h1 
     {
         font-size: 1.7rem !important;
+    }
+    #zonaMedia img, svg
+    {
+        height: 100% !important;
     }
 
 }

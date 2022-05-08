@@ -1,7 +1,6 @@
 /*ESTILOS PREDEFINIDOS APLICADOS A TODA LA PAGINA WEB*/
 
 /* FUENTES DESCARGADAS */
-
 @font-face
 {
   font-family: 'Titulos';
@@ -27,8 +26,8 @@
   height: auto;
 }
 
-
 /*  ESTILOS DEL BODY*/
+
 /* Se aplica !important en background color y font-family dado que en la seccion "Media" hay estilos de Bootstrap que 
 desajustan nuestros propios estilos creados en CSS */
 
@@ -363,7 +362,6 @@ dl, ol, ul {
 
 
 /* MEDIA QUERIES */
-
 
 /*  TABLET ESTÁNDAR */
 

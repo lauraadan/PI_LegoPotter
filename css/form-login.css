@@ -1,3 +1,7 @@
+/*  No se aplica reseteo de los márgenes, ni fuentes etc dado que esta seccion ya está vinculada a la hoja de estilos 
+principal (style.css) que define todos los estilos principales de cada pagina */
+
+
 /* Estilos predefinidos en la pagina */
 .hrTitle
 {
@@ -24,7 +28,7 @@
     font-family: 'Titulos', sans-serif;
 }
 
-.form-login
+#login .form-login
 {
     display: flex;
     flex-direction: column;
@@ -33,7 +37,7 @@
     margin-top: 50px;
 }
 
-.datosContacto
+#login .datosContacto
 {
     display: flex;
     flex-direction: column;
@@ -61,7 +65,7 @@ input:focus
     border-style: none;
 }
 
-.btn-enviar
+.datosContacto .btn-enviar
 {
     border: 2px solid var(--amarillo);
     padding: 10px;
@@ -71,11 +75,12 @@ input:focus
     font-size: 1.2rem;
     color: var(--amarillo);
     text-decoration: none;
+    cursor: pointer;
 }
 
-.btn-enviar:hover 
+ .datosContacto .btn-enviar:hover 
 {
-    color: var(--hover);
+    color: var(--hover2);
 } 
 
 .datosContacto .mensaje
@@ -109,16 +114,11 @@ input:focus
         padding: 80px 30px;
         margin: 120px 30px;
     }
-    .logoForo img
-    {
-        width: 45%;
-        height: 45%;
-    }
-    .form-login
+    #login .form-login
     {
         margin-left: 0px;
     }
-    .datosContacto 
+    #login .datosContacto 
     {
         width: 60%;
     }
@@ -139,16 +139,7 @@ input:focus
         padding: 80px 15px;
         margin: 115px 15px;
     }
-    .logoForo
-    {
-        top: 0;
-    }
-    .logoForo img
-    {
-        width: 60%;
-        height: 60%;
-    }
-    .datosContacto 
+    #login .datosContacto 
     {
         width: 80%;
     }
