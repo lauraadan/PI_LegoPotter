@@ -1,0 +1,594 @@
+/*ESTILOS PREDEFINIDOS APLICADOS A TODA LA PAGINA WEB*/
+
+/* FUENTES DESCARGADAS */
+
+@font-face
+{
+  font-family: 'Titulos';
+  src: url('../fonts/BluuNext-Titling.otf');
+}
+
+@font-face
+{
+  font-family: 'TituloSeccion';
+  src: url('../fonts/harryp.TTF');
+}
+
+@font-face
+{
+  font-family: 'Texto';
+  src: url('../fonts/Quicksand.ttf');
+}
+
+* 
+{
+  margin: 0;
+  padding: 0;
+  height: auto;
+}
+
+
+/*  ESTILOS DEL BODY*/
+/* Se aplica !important en background color y font-family dado que en la seccion "Media" hay estilos de Bootstrap que 
+desajustan nuestros propios estilos creados en CSS */
+
+body
+{
+  background-color: #000000 !important;
+  overflow-x: hidden;
+  font-family: 'Texto', sans-serif !important;
+}
+
+/* VIDEO BACKGROUND */
+
+body #videoBackground
+{
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  opacity: 0.5;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+/* COLORES*/
+
+:root
+{
+  --morado:#7a75ab;
+  --morado2: #49385e;
+  --amarillo: #b58e22;
+  --hover2:#7a75ab;
+  --hover: #b58e22;
+}
+
+
+/* BOTON SCROLL BACK TO TOP -768px */
+
+#top
+{
+	position: fixed;
+	bottom: 10px;
+	right: 40px;
+  z-index: 1000000;
+  display: none;
+}
+
+#top i
+{
+ font-size: 3.8em;
+ color:var(--amarillo);
+}
+
+/* NAVBAR */
+
+#navbar
+{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  transition: top 1s;
+  z-index: 10000;
+}
+
+#barraMenu
+{
+  background-color: #000000a8;;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 0px 50px;
+}
+
+#menu 
+{
+  list-style-type: none;
+  display: flex;
+  font-family: 'Titulos', sans-serif;
+}
+
+#menu ul li 
+{
+ display: inline-block;
+ transition: all ease-in-out 250ms;
+}
+
+.hide 
+{
+  font-size: 1.5em;
+  color: var(--amarillo);
+  cursor: pointer;
+  display: none;
+}
+
+.elemMenu > a
+{
+	font-size: 1.3rem;
+	color: white;
+	text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  margin-right: 25px;
+  padding-bottom: 3px;
+}
+
+.elemMenu > a:hover
+{
+  color: var(--amarillo);
+}
+
+.elemMenu .active
+{
+  border-bottom: 2px solid var(--amarillo);
+}
+
+.foro
+{
+  position: relative;
+  left: 61%;
+  list-style-type: none;
+}
+
+.btnForo
+{
+  border: 2px solid white;
+  padding: 10px;
+  border-top-left-radius: 20px;
+  text-decoration: none;    
+}
+
+.btnForo:hover
+{
+  border: 2px solid var(--hover);
+}
+
+.elemBtn > a
+{
+	font-size: 1.3rem;
+	color: white;
+	text-decoration: none;
+  font-family: 'Titulos', sans-serif;
+}
+
+.elemBtn > a:hover
+{
+	color: var(--hover);
+  font-weight: 500;
+}
+
+/* Desactivar estilos predefinidos por Boostrap del menu nav de la seccion "MEDIA" y que desajustan los estilos de nuestro nav */
+
+ol, ul 
+{
+  padding-left: 0rem !important;
+}
+
+dl, ol, ul {
+  margin-top: 0 !important;
+  margin-bottom: 0rem !important; 
+}
+
+/* Banner en todas las paginas (menos en home)*/
+
+#banner
+{
+  height: 530px;
+}
+
+#banner h1
+{
+  z-index: 100000;
+  font-size: 5em;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Titulos', sans-serif;
+}
+
+.hrBanner
+/* Añadido important para bloquear los estilos predefinidos de Bootstrap que se aplican solo en la seccion "Media" */
+{
+  width: 360px !important;
+  border-color: var(--amarillo) !important;
+  border: 3px !important;
+  font-size: 10px !important;
+  background-color: var(--amarillo) !important;
+  height: 3px !important;
+  margin: 0rem 0 !important;
+  opacity: 1 !important;
+}
+
+.contenedorBanner
+{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+  top: 40%;
+  left: 40%;
+}
+
+/* ZONA DEL FOOTER */
+
+#footer
+{
+  background-color: #040304;
+  height: 100%;
+  width: 100%;
+  padding: 50px;
+}
+
+.contain
+{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.contain .footerAutor
+{
+  color: #fff;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.contain .logos
+{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contain .logos img
+{
+  width: 20%;
+}
+
+.newsletterSocial
+{
+  margin-bottom: 40px;
+}
+
+.titleNewsletter
+{
+  margin: 20px 0px 10px 0px;
+}
+
+.colFooter h1 
+{
+  font-size: 30px;
+  color: var(--amarillo);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  padding: 60px 0px 8px 0px;
+}
+
+.footer .colFooter ul li a 
+{
+  color: var(--amarillo);
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+}
+
+.social ul 
+{
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.social ul li a:hover 
+{
+  color: var(--hover2);
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+}
+
+.social .fa-brands
+{
+  font-size: 40px;
+}
+
+.footer .newsletter
+{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.footer .suscribir
+{
+  width: 600px;
+  height: 45px;
+}
+
+.footer .btnSuscribir
+{
+  background-color: transparent;
+  border: 1px solid var(--amarillo);
+  padding: 20px;
+  color: var(--amarillo);
+  text-transform: uppercase;
+  margin: 15px 0px;
+}
+
+.footer .btnSuscribir:hover
+{
+  border: 1px solid var(--hover2);
+  color: var(--hover2);
+  cursor: pointer;
+}
+.footerAutor .hrFooterAutor
+{
+  border-color: var(--amarillo);
+  margin: 30px 0px;
+  width: 300px;
+  display: none;
+}
+
+
+/* MEDIA QUERIES */
+
+
+/*  TABLET ESTÁNDAR */
+
+@media only screen and (max-width: 768px)
+{
+
+  /* Menu nav */
+  #barraMenu
+  {
+    height: 180px;
+    text-align: left;
+    background-color: transparent;
+  }
+  .foro
+  {
+    left:10%;
+  }
+  .elemMenu > a 
+   {
+    font-size: 1.1em;
+  }
+  .elemBtn > a 
+  {
+    font-size: 1.1em;
+  }
+  .elemMenu .active
+  {
+    color: var(--hover);
+    border-bottom: none;
+  }
+  .btnEntradas
+  {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 20px;
+  }
+  #menu ul li 
+  {
+    width: 100%;
+    text-align: left;
+  }
+  #barraMenu ul 
+  {
+    display: none;
+  }
+  .hide
+  {
+    display: block;
+    font-size: 2em;
+    margin: auto;
+  }
+  
+  /* Banner de todas las paginas menos Home */
+  #banner 
+  {
+    height: 270px;
+  }
+  .contenedorBanner
+  {
+    left: 5%;
+    margin-top: 140px;
+  }
+  #banner h1 
+  {
+    font-size: 3.2em;
+  }
+  #banner .hrBanner
+  {
+    width: 220px !important;
+  }
+
+  /* Footer */
+  #footer 
+  {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .contain 
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+  }
+  .contain .logos 
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footerAutor .hrFooterAutor
+  {
+    display: block;
+  }
+  .contain .logos img 
+  {
+    width: 30%;
+  }
+  .footer .newsletter 
+  {
+    width: 80%;
+  }
+  .colFooter h1 
+  {
+    font-size: 25px;
+  }
+  .footer .suscribir 
+  {
+    width: 360px;
+  } 
+  /* Activacion del boton scroll a partir de -768px */
+  #top
+  {
+    display: block;
+  } 
+  #top i
+  {
+    font-size: 2.4em;
+  } 
+}
+
+/* MOVIL ESTÁNDAR  - OK */
+  
+@media only screen and (max-width: 400px)
+{
+
+  /* Nav menu*/
+  #menu
+  {
+    font-family: 'Texto', sans-serif;
+  }
+  #barraMenu
+  {
+    height: 180px;
+    text-align: left;
+    background-color: transparent;
+  }
+  .foro
+  {
+    left:10%;
+  }
+  .elemMenu > a 
+   {
+    font-size: 0.9em;
+  }
+  .elemBtn > a 
+  {
+    font-size: 0.9em;
+    margin-right: 70px;
+  }
+  .btnForo
+  {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 15px;
+  }
+
+  #menu ul li 
+  {
+    width: 100%;
+    text-align: left;
+  }
+  #barraMenu ul 
+  {
+    display: none;
+  }
+  .hide
+  {
+    display: block;
+    font-size: 2.2em;
+    margin: auto;
+  }
+  
+  /* Banner de todas las paginas menos Home */
+  
+  #banner h1 
+  {
+    font-size: 2.4em;
+  }
+  #banner .hrBanner
+  {
+    width: 100px;
+  }
+  .contenedorBanner
+  {
+    left: 5%;
+  }
+
+  /* Footer */
+  .footerAutor .hrFooterAutor 
+  {
+    width: 180px;
+  }
+  .footerAutor h2
+  {
+    font-size: 18px;
+    color: var(--morado);
+  }
+  .footerAutor p
+  {
+    font-size: 16px;
+  }
+  .contain .logos img 
+  {
+    width: 50%;
+  }
+  .footer .col h1 
+  {
+    font-size: 18px;
+  }
+  .footer .suscribir 
+  {
+    width: 270px;
+    height: 40px;
+  }
+  .social .fa-brands 
+  {
+    font-size: 30px;
+  }
+  .social ul 
+  {
+    width: 200px;
+  }
+  #top 
+  {
+    right: 75px;
+  }
+}
+
+

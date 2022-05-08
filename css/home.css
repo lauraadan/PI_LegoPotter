@@ -1,0 +1,1143 @@
+
+
+/*  BOTONES PREDEFINIDOS EN PRACTICAMENTE TODA LA PAGINA" */
+
+.btnMore
+{
+  padding: 15px 30px;
+  border-radius: 20px;
+  margin-top: 30px;
+  background-color: #514a92;
+  border-color:transparent;
+}
+
+.btnMore a 
+{
+  font-size: 0.9rem;
+	color: #fff;
+	text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btnMore:hover 
+{
+  background-color: var(--hover);
+}
+
+/*  ZONA DEL BANNER SUPERIOR */
+
+#bannerHome
+{
+    height: 50vw;
+    width: 100%;
+}
+
+#bannerHome #bg
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url(../img/home/bannerSuperior/backgroundHome.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:800px;
+  bottom: 0px;
+}
+
+#bannerHome #bgOculto
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(../img/home/bannerSuperior/backgroundHome.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:300px;
+  bottom: 0px;
+  display: none;
+}
+
+#bannerHome .VideoFondo
+{
+	width: 100%;
+	height: 100%;
+  position: relative;
+  bottom: 200px;
+}
+
+/* ZONA DE INFORMACION, HISTORIA LEGO POTTER ETC */
+
+#zonaInfo .infoTexto
+{
+  height: auto;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  color: #fff;
+}
+
+.infoTexto .infoTextoTitulo
+{
+  margin-bottom: 30px;
+}
+
+.infoTexto .infoTextoTitulo h1
+{
+  font-size: 2em;
+  font-weight: bold;
+  font-family: 'Titulos', sans-serif;
+}
+
+.infoTexto .infoTextoTitulo h4
+{
+  font-size: 1.5em;
+}
+
+.infoTexto .infoTextoParrafo p 
+{
+  font-size: 20px;
+}
+
+/* ZONA DE PARTICIPANTES */
+
+#zonaParticipantes
+{
+  padding:  100px 0px;
+}
+
+#zonaParticipantes .contParticipantes
+{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(330px, auto);
+}
+
+#zonaParticipantes .contParticipantes .card
+{
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+#zonaParticipantes .contParticipantes .card:hover
+{
+  transition: all 2s ease;
+  background-image: none;
+  background-color: transparent;
+}
+
+/* Zona del contenedor interior de cada card, que se activa al pasar el ratón por encima */
+
+.contParticipantes .layer
+{
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1000;
+  transition: all 0.5s ease;
+  text-align: center;
+}
+
+.layer .contenidoLayer
+{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  outline: 1px solid var(--morado);
+  outline-offset: -30px;
+}
+
+.card .layer h1
+{
+  color: #fff;
+  font-size: 3em;
+}
+
+.card .layer p
+{
+  color: #fff;
+  font-size: 1.3em;
+  margin: 10px 50px;
+}
+
+.card .layer h1 span
+{
+  color: var(--amarillo);
+}
+
+.contParticipantes .layer:hover
+{
+  transition: all 0.5s ease;
+  opacity: 0.95;
+  cursor: default;
+}
+
+/* Ajuste del Grid en cada card de participante */
+
+.contParticipantes .participantes01
+{
+  font-size: 60px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  font-family: 'Titulos', sans-serif;
+}
+
+.contParticipantes .participantes01 span 
+{
+  color: var(--amarillo);
+}
+
+.participantes01 .btnParticipantes
+{
+  width: 220px;
+  padding: 15px 30px;
+  border-radius: 20px;
+  margin-top: 50px;
+  background-color: #514a92;
+  border-color:transparent;
+}
+
+.participantes01 .btnParticipantes a 
+{
+  font-size: 0.9rem;
+	color: #fff;
+	text-decoration: none;
+  text-transform: uppercase;
+}
+
+.participantes01 .btnParticipantes:hover
+{
+  background-color: var(--hover);
+  color: #000;
+}
+
+.contParticipantes .participantes02
+{
+  grid-column: 2;
+  grid-row: 1 / 3;
+  background-image: url("../img/home/artistas/AustrianBrickFan.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.contParticipantes .participantes03
+{
+  background-image: url("../img/home/artistas/TopBricks.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.contParticipantes .participantes04
+{
+  background-image: url("../img/home/artistas/CrazyGamingHub.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.contParticipantes .participantes05
+{
+  grid-column: 3;
+  grid-row: 2 / 4;
+  background-image: url("../img/home/artistas/AuraLopez.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.contParticipantes .participantes06
+{
+  grid-column: 1;
+  grid-row: 3 / 5;
+  background-image: url("../img/home/artistas/AllNewBricks.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.contParticipantes .participantes07
+{
+  background-image: url("../img/home/artistas/FantasticoPlastico.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.contParticipantes .participantes08
+{
+  grid-column: 2;
+  grid-row: 4 / 6;
+  background-image: url("../img/home/artistas/BeyondTheBrick.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.contParticipantes .participantes09
+{
+  background-image: url("../img/home/artistas/albert_lachapelle.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.contParticipantes .participantes10
+{
+  background-image: url("../img/home/artistas/BillyBricks.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.contParticipantes .participantes11
+{
+  background-image: url("../img/home/artistas/PopCornBrickStopMotion.jpg");
+  background-position: center;
+  background-size: cover;
+  grid-column: 3;
+  grid-row: 5 / 8;
+}
+
+.contParticipantes .participantes12
+{
+  background-image: url("../img/home/artistas/BrickBuilder.jpg");
+  background-position: center;
+  background-size: cover;
+  grid-column: 1 / 3;
+  grid-row: 6 / 8;
+}
+
+.contenidoLayer .redesParticipantes img
+{
+  width:7%;
+  height: 7%;
+  margin: 10px;
+}
+
+.contenidoLayer .redesParticipantes img
+{
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+}
+
+.contenidoLayer .redesParticipantes img:hover
+{
+ transform: scale(1.2);
+ transition: all 0.6s ease;
+}
+
+
+/* ZONA DE VIDEOS RECIENTES */
+
+#zonaVideos
+{
+  margin:  100px 50px;
+}
+
+#zonaVideos .tituloSeccion
+{
+  font-size: 60px;
+  color: #fff;
+  font-family: 'Titulos', sans-serif;
+}
+
+#zonaVideos .tituloSeccion span
+{
+ color: var(--amarillo);
+}
+
+#zonaVideos .contVideos
+{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(400px, auto);
+  height: 100%;
+}
+
+#zonaVideos .btnVideo
+{
+  width: 170px;
+  padding: 15px 30px;
+  border-radius: 20px;
+  margin: 20px 0px 80px 0px;
+  background-color: #514a92;
+  border-color:transparent;
+}
+
+#zonaVideos .btnVideo a 
+{
+  font-size: 0.9rem;
+	color: #fff;
+	text-decoration: none;
+  text-transform: uppercase;
+}
+
+#zonaVideos .btnVideo:hover
+{
+  background-color: var(--hover);
+  color: #000;
+}
+
+/* Zona de contenido de cada video */
+
+.contVideos .video01
+{
+  display: flex;
+  align-items: center;
+}
+
+.video01 .divImg
+{
+  background: url("../img/home/videos/01.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contVideos .video02
+{
+  display: flex;
+  align-items: center;
+}
+
+ .video02 .divImg
+{
+  background: url("../img/home/videos/02.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contVideos .video03
+{
+  display: flex;
+  align-items: center;
+}
+
+ .video03 .divImg
+{
+  background: url("../img/home/videos/03.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contVideos .video04
+{
+  display: flex;
+  align-items: center;
+}
+
+ .video04 .divImg
+{
+  background: url("../img/home/videos/04.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contVideos .video05
+{
+  display: flex;
+  align-items: center;
+}
+
+ .video05 .divImg
+{
+  background: url("../img/home/videos/05.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.video .contVideo
+{
+  display: flex;
+  flex-direction: column;
+  margin: 0px 20px;
+  padding: 90px 0px;
+  color: #fff;
+  width: 100%;
+  border-top: 1px solid var(--morado);
+  border-bottom: 1px solid var(--morado);
+}
+
+.contVideo .tituloVideo
+{
+  font-size: 1.9rem;
+  margin: 15px 0px;
+}
+
+.contVideo a 
+{
+  text-decoration: none;
+  color: #fff;
+}
+
+.contVideo a:hover
+{
+  color: var(--hover);
+}
+
+
+/* ZONA DEL BANNER SHOP */
+
+#zonaBannerShop
+{
+  position: relative;
+  height: 730px;
+  margin: 150px 50px 70px 50px;
+  display: flex;
+  align-items: center;
+}
+
+.contenedorTextoBannerShop
+{
+  position: relative;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.contenedorTextoBannerShop .texto 
+{
+  width: 750px;
+}
+
+.contenedorTextoBannerShop .texto h1
+{
+  font-size: 2.7em;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.contenedorTextoBannerShop .texto h1 span 
+{
+  color: var(--amarillo);
+}
+
+.contenedorTextoBannerShop .texto p 
+{
+  font-size: 1.5em;
+  color: #fff;
+}
+
+#zonaBannerShop .imagenShop
+{
+  width: 100%;
+  outline: 1px solid var(--morado);
+  outline-offset: -30px;
+}
+
+/* ZONA DE NOTICIAS */
+
+#zonaNoticias
+{
+  padding:  100px 50px;
+}
+
+#zonaNoticias .contNoticias
+{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+/* Zona de contenido de cada noticia */
+
+.contNoticias .noticia01
+{
+  grid-column: 1;
+  grid-row: 1 / 2;
+  font-size: 60px;
+  color: #fff;
+  height: 210px;
+  font-family: 'Titulos', sans-serif;
+}
+
+.contNoticias .noticia01 span
+{
+  color: var(--amarillo);
+}
+
+.contNoticias .noticia02
+{
+  grid-row: 1 / 3;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--hover2);
+  border-bottom: 1px solid var(--hover2);
+}
+
+.contNoticias .noticia02 .divImg
+{
+  background: url("../img/home/noticias/02.png");
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contNoticias .noticia03
+{
+  grid-row: 1 / 2;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--hover2);
+  border-bottom: 1px solid var(--hover2);
+}
+
+.contNoticias .noticia03 .divImg
+{
+  background: url("../img/home/noticias/03.png");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+}
+
+.contNoticias .noticia04
+{
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--hover2);
+  border-bottom: 1px solid var(--hover2);
+  grid-row: 2 / 5 ;
+}
+
+.contNoticias .noticia04 .divImg
+{
+  background: url("../img/home/noticias/01.png");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contNoticias .noticia05
+{
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--hover2);
+  border-bottom: 1px solid var(--hover2);
+  grid-row: 3/ 5 ;
+}
+
+.contNoticias .noticia05 .divImg
+{
+  background: url("../img/home/noticias/04.png");
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+
+.contNoticias .noticia06
+{
+
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--hover2);
+  border-bottom: 1px solid var(--hover2);
+  grid-row: 2 / 5 ;
+}
+
+.contNoticias .noticia06 .divImg
+{
+  background: url("../img/home/noticias/05.png");
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contNoticias .noticia07
+{
+  grid-row: 5 / 8 ;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--hover2);
+  border-bottom: 1px solid var(--hover2);
+}
+
+.contNoticias .noticia07 .divImg
+{
+  background: url("../img/home/noticias/06.png");
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contNoticias .noticia08
+{
+  grid-row: 5 / 9;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--hover2);
+  border-bottom: 1px solid var(--hover2);
+}
+
+ .contNoticias .noticia08 .divImg
+{
+  background: url("../img/home/noticias/07.png");
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-size: 120%;
+  background-repeat: no-repeat;
+}
+
+.contNoticias .noticia09
+{
+  grid-row: 5 / 8 ;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--hover2);
+  border-bottom: 1px solid var(--hover2);
+}
+
+.contNoticias .noticia09 .divImg
+{
+  background: url("../img/home/noticias/08.png");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.contNoticias .noticia10
+{
+  grid-row: 8 / 12;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--hover2);
+  border-bottom: 1px solid var(--hover2);
+}
+
+.contNoticias .noticia10 .divImg
+{
+  background: url("../img/home/noticias/09.png");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.contNoticias .noticia11
+{
+  grid-row: 9 / 13;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--hover2);
+  border-bottom: 1px solid var(--hover2);
+}
+
+.contNoticias .noticia11 .divImg
+{
+  background: url("../img/home/noticias/010.png");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.contNoticias .noticia12
+{
+  grid-row: 8 / 11 ;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--hover2);
+  border-bottom: 1px solid var(--hover2);
+}
+
+.contNoticias .noticia12 .divImg
+{
+  background: url("../img/home/noticias/011.png");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: 150%;
+  background-repeat: no-repeat;
+}
+
+.contNoticias .noticia13
+{
+  grid-row: 12 / 15 ;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--hover2);
+  border-bottom: 1px solid var(--hover2);
+}
+
+.contNoticias .noticia13 .divImg
+{
+  background: url("../img/home/noticias/015.png");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contNoticias .noticia14
+{
+  grid-row: 13 / 17 ;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--hover2);
+  border-bottom: 1px solid var(--hover2);
+}
+
+.contNoticias .noticia14 .divImg
+{
+  background: url("../img/home/noticias/014.png");
+  width: 100%;
+  height: 100%;
+  background-size: 130%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contNoticias .noticia15
+{
+  grid-row: 11 / 14 ;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--hover2);
+  border-bottom: 1px solid var(--hover2);
+}
+
+.contNoticias .noticia15 .divImg
+{
+  background: url("../img/home/noticias/013.png");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: 120%;
+  background-repeat: no-repeat;
+}
+
+.contNoticias .noticia16
+{
+  grid-row: 15 / 17 ;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--hover2);
+  border-bottom: 1px solid var(--hover2);
+}
+
+.contNoticias .noticia16 .divImg
+{
+  background: url("../img/home/noticias/012.png");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.contNoticias .noticia17
+{
+  grid-row: 14 / 17 ;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--hover2);
+  border-bottom: 1px solid var(--hover2);
+}
+
+.contNoticias .noticia17 .divImg
+{
+  background: url("../img/home/noticias/016.png");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: 170%;
+  background-repeat: no-repeat;
+}
+
+.noticia .contNoticia
+{
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  color: #fff;
+  width: 100%;
+}
+
+.noticia .contNoticia p
+{
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.noticia .contNoticia a 
+{
+  text-decoration: none;
+  color: #fff;
+}
+
+.noticia .contNoticia a:hover
+{
+  color: var(--hover);
+}
+
+/* ZONA DEL BANNER FORO */
+
+#zonaForo
+{
+  height: 730px;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contenedorTextoBannerForo
+{
+  position: relative;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.contenedorTextoBannerForo .texto h1
+{
+  font-size: 2.7em;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.contenedorTextoBannerForo .texto h1 span 
+{
+  color: var(--amarillo);
+}
+
+.contenedorTextoBannerForo .texto p 
+{
+  font-size: 1.5em;
+  color: #fff;
+}
+
+.imagenForo img 
+{
+  width: 60%;
+  height: 60%;
+}
+
+
+/* MEDIA QUERIES */
+
+
+/* TABLET ESTÁNDAR - OK */
+
+@media only screen and (max-width: 768px) 
+{
+  #bannerHome #bg
+  {
+    background-size: 400px;
+  }
+  #bannerHome
+  {
+    height: 120vw;
+  }
+  #zonaInfo .infoTexto 
+  {
+    padding: 30px;
+  }
+  .participantes01 .btnParticipantes 
+  {
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+  .contParticipantes .participantes01 
+  {
+    margin-left: 30px;
+  }
+  #zonaParticipantes .contParticipantes 
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  #zonaParticipantes .contParticipantes .card 
+  {
+    height: 420px;
+  }
+  .contParticipantes .participantes05 
+  {
+    background-position: inherit;
+  }
+  #zonaVideos 
+  {
+    margin: 50px 30px;
+  }
+  #zonaVideos .contVideos 
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  /*Desactivación de la vista previa a partir de medidas -768px*/
+  .video .divImg 
+  {
+    display: none;
+  }
+  .video .contVideo 
+  {
+    margin: 0px 0px; 
+    padding: 40px 0px;
+  }
+  #zonaBannerShop .imagenShop
+  {
+    display: none;
+  }
+  #zonaBannerShop 
+  {
+    margin: 0px 30px 0px 30px;
+  }
+  .contenedorTextoBannerShop .texto 
+  {
+    width: 100%;
+  }
+  #zonaNoticias 
+  {
+    padding: 50px 30px;
+  }
+  #zonaNoticias .contNoticias 
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  .contNoticias .noticia
+  {
+    height: 300px;
+  }
+  #zonaForo 
+  {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0px 30px 130px 30px;
+  }
+  .contenedorTextoBannerForo 
+  {
+    width: 90%;
+  }
+  .contenedorTextoBannerForo .texto h1 
+  {
+    font-size: 2.3em;
+  }
+  .contenedorTextoBannerForo .texto p 
+  {
+    font-size: 1.3em;
+  }
+  #zonaForo .imagenForo img
+  {
+    width: 100%;
+    height:80%;
+  }
+  #zonaForo .imagenForo 
+  {
+    height:50%;
+  }
+}
+
+
+/* MOVIL ESTÁNDAR  - OK */ 
+
+@media only screen and (max-width: 400px)
+{
+  #bannerHome 
+  {
+    height: 220vw;
+  }
+  /* Dado que no sé hacer responsive el scroll a través de Javascript, desactivamos esta imagen para que deje de
+  hacer el efecto scroll (está predeterminado a 400px y eso en movil ocuparía mucho), y lo reemplazamos por bgOculto, que basicamente
+  es la misma imagen pero al no estar enlazada con el scroll_banner.js, no realizará el efecto scroll y se quedará en la parte superior fija. */
+  #bannerHome #bg 
+  {
+    display: none;
+  }
+  #bannerHome #bgOculto 
+  {
+    display: block;
+  }
+  #zonaInfo .infoTexto 
+  {
+    padding: 20px;
+  }
+  .contParticipantes .participantes01 
+  {
+    font-size: 40px;
+    margin-left: 20px;
+  }
+  #zonaVideos 
+  {
+    margin: 50px 20px;
+  }
+  #zonaVideos .tituloSeccion 
+  {
+    font-size: 40px;
+  }
+  #zonaVideos .btnVideo 
+  {
+    width: 130px;
+  }
+  #zonaBannerShop 
+  {
+    margin: 150px 30px 150px 30px;
+  }
+  .contNoticias .noticia01 
+  {
+    font-size: 40px;
+    height: 130px;
+  }
+  .noticia .contNoticia p 
+  {
+    font-size: 1.2rem;
+  }
+  .contNoticias .noticia 
+  {
+    height: 330px;
+  }
+  #zonaForo 
+  {
+    margin: 0px 30px 130px 30px;
+    width: 90%;
+  }
+  .contenedorTextoBannerForo .texto h1 
+  {
+    font-size: 2em;
+  }
+  .contenedorTextoBannerForo .texto p 
+  {
+    font-size: 1.2em;
+  }
+
+
+
+
+}

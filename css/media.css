@@ -1,0 +1,169 @@
+#zonaMedia
+{
+    height: auto;
+    background-color: #0d1316bd;
+    padding: 100px 80px;
+    margin: 100px 50px;
+    outline: 1px solid var(--morado2);
+    outline-offset: -20px;
+}
+/* AJUSTE DE LOS ESTILOS PREDEFINIDOS DE BOOSTRAP */
+
+/* Medida maxima de ancho de cada contenedor de video */
+
+
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl 
+{
+    max-width: 1615px !important;
+}
+
+#zonaMedia img, svg
+{
+    height: 100% !important;
+}
+
+/* Botones "Ver video" */
+
+.btn-group-sm>.btn, .btn-sm 
+{
+    padding: 10px 30px !important;
+    font-size: 0.9rem !important;
+    border-radius: 20px !important;
+    background-color: #514a92 !important;
+    border-color:transparent !important;
+    text-transform: uppercase !important;
+}
+
+.btn-group-sm>.btn, .btn-sm a
+{
+    text-decoration: none;
+    color: #fff !important;
+}
+
+.btn-group-sm>.btn, .btn-sm:hover 
+{
+  background-color: var(--hover) !important;
+}
+
+/*Zona de texto de la card */
+
+.card-body h1
+{
+    font-size: 1.3rem !important;
+    color: #514a92 !important;
+}
+
+.card-body
+{
+    border-left: 1px solid #514a92 !important;
+    border-right: 1px solid #514a92 !important;
+    border-bottom: 1px solid #514a92 !important;
+}
+
+.card-text
+{
+    color: #fff;
+    
+}
+
+/* Cards que contienen el video */
+.card {
+    background-color: transparent !important;
+    border-radius: 0rem !important;
+}
+
+/* Distancia entre cards en el eje y */
+.g-3, .gy-3 
+{
+    --bs-gutter-y: 4rem !important;
+}
+
+
+/*  MEDIA QUERIES */
+
+/*  TABLET ESTÁNDAR - OK */
+
+@media only screen and (max-width: 768px)
+{
+    /*  Responsive de mi código */
+    #zonaMedia 
+    {
+        padding: 10px 30px;
+        margin: 100px 30px;
+    }
+    /* Ajustes del responsive de Bootstrap */
+
+    .btn-group-sm>.btn, .btn-sm 
+    {
+        padding: 10px 16px !important;
+    }
+    .row-cols-sm-2>* 
+    {
+        width: 100% !important;
+    }
+    .container .row 
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .col .card-text 
+    {
+        font-size: 1.2rem !important;
+    }
+    .card-body h1 
+    {
+        font-size: 1.7rem !important;
+    }
+
+}
+
+/* MOVIL ESTANDAR - OK */
+  
+@media only screen and (max-width: 400px)
+{
+    /* Ajustes del responsive de Bootstrap */
+    .g-3, .gy-3 
+    {
+        --bs-gutter-y: 2rem !important;
+    }
+    #zonaMedia img, svg 
+    {
+        height: 100% !important;
+    }
+    .card-body h1 
+    {
+        font-size: 1.5rem !important;
+    }
+    .btn-group-sm>.btn, .btn-sm 
+    {
+        padding: 5px 20px !important;
+    }
+    .card-body .d-flex 
+    {
+        flex-direction: column;
+    }
+    .card-body .align-items-center 
+    {
+        align-items: flex-start!important;
+    }
+    .btn-group-vertical>.btn, .btn-group>.btn 
+    {
+        margin-bottom: 10px;
+    }
+    /*  Responsive de mi código */
+
+    #zonaMedia 
+    {
+        padding: 10px 20px;
+        margin: 100px 20px;
+    }
+}
+
+
+
+
+
+
+
+
+

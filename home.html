@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Zona de metadatos  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Proyecto Integrado para el curso 2021-2022 de Grado Superior de Gráfica Interactiva, Escola Llotja (Barcelona)">
+    <meta name="keywords" content="Harry, Potter, Lego, Proyecto, Llotja">
+    <meta name="author" content="Laura Adán">
+    <meta name="copyright" content="Laura Adán">
+    <!-- Hoja de estilos predefinidos (botones, header, footer, titulos...) -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Hoja de estilos de la página -->
+    <link rel="stylesheet" href="css/home.css">
+    <!-- Link a hoja de estilos de libreria AOS -->
+    <link rel="stylesheet" href="css/aos.css">
+    <!-- Scripts -->
+    <script src="js/btnScroll.js"></script>
+    <script src="js/menuOculto.js"></script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpg" href="img/favicon.png"/>
+    <!-- Script de Font Awesome para iconos -->
+    <script src="https://kit.fontawesome.com/44915d7dee.js" crossorigin="anonymous"></script>
+    <title>LEGO® Potter™ | Inicio</title>
+</head>
+<body>
+
+
+<!-- ZONA DE ESTRELLAS APLICADO A TODO EL BODY -->
+
+<video src="img/stars01.mp4" id="videoBackground" autoplay loop muted width="100%"></video>
+
+
+<!-- ZONA DEL BOTON SCROLL -->
+
+<div id="top">
+    <a href="#"><i class="fa-solid fa-circle-arrow-up"></i></a>
+</div>
+
+<!-- ZONA DEL NAVEGADOR -->
+
+<header id="navbar">
+
+    <nav id="barraMenu">
+
+        <ul id="menu">
+            <li class="elemMenu"><a href="home.html" class="active">Inicio</a></li>
+            <li class="elemMenu"><a href="aniversario.html">20 Aniversario</a></li>
+            <li class="elemMenu"><a href="programacion.html">Programación</a></li>
+            <li class="elemMenu"><a href="media.html">Vídeos</a></li>
+            <li class="elemMenu"><a href="https://www.lego.com/es-es/themes/harry-potter" target="_blank">Tienda</a></li>           
+        </ul>
+
+        <ul class="foro">
+            <li class="elemBtn"><a href="form-login.html" class="btnForo">FORO</a></li>
+        </ul>
+        
+        <div class="hide">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+    </nav>   
+
+</header>
+
+
+<!-- ZONA DE BANNER SUPERIOR -->
+
+<section id="bannerHome">
+    <div class="VideoFondo">
+        <video src="img/home/stars01.mp4" autoplay loop muted width="100%"></video> 
+    </div>
+     <div id="bg"></div>
+     <div id="bgOculto"></div>
+</section>
+
+
+<!--  ZONA DE INFO + VIDEO PROMOCIONAL -->
+
+<section id="zonaInfo">
+
+    <div class="infoVideo">
+        <video src="img/home/Video_promo.mp4" autoplay loop muted width="100%" ></video>
+    </div>
+
+    <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="120"
+    data-aos-delay="500" data-aos-easing="ease" class="infoTexto">
+            
+        <div  class="infoTextoTitulo" >
+            <h3>Historia de</h3>
+            <h1>LEGO® Harry Potter™</h1>
+            <h4>Algunas cosas nunca envejecen. Y cuando decimos “algunas cosas”, nos referimos a LEGO® Harry Potter™.</h4>
+        </div>
+
+        <div class="infoTextoParrafo">
+            <p>Han pasado veinte años desde nuestro primer encuentro con el niño mago de los inconfundibles lentes, 
+            sus amigos y sus némesis tanto en la pantalla grande como en forma de minifigura LEGO®. Sí, dos décadas completas. 
+            <i>“Bastantus increíblus”</i>, ¿no lo crees?
+            <br>
+            <br>
+            A quienes crecieron leyendo los libros, las películas les abrieron las puertas a un mundo de aventuras completamente nuevo en el que los niños, 
+            poseedores de habilidades mágicas en desarrollo, podían ser singulares y fantásticos a la vez y, si se lo proponían y trabajaban juntos en ello, 
+            serían capaces de derrotar implacablemente al mal.
+            <br>
+            <br>
+            Para celebrar este hito en el tiempo, lanzamos el nuevo y superespecial set LEGO® Íconos de Hogwarts™: 
+            Edición para Coleccionistas, que rinde homenaje a momentos mágicos de los éxitos de la pantalla grande. 
+            Como dirían los gemelos Weasley, “¡Fantástico!”.
+            <br>
+            <br>
+            Y podemos afirmar con toda seguridad que no existiría de no ser por sus antecesores. 
+            En estos veinte años, hemos conjurado una serie de geniales sets LEGO® con el fin de dar a los fans un medio 
+            para construir e interpretar las aventuras más representativas de su propio mundo de los magos. 
+            <br>
+            Acompáñanos a voltear el Giratiempo y revivir nuestros momentos favoritos de las películas de Harry Potter™ 
+            relatados con sets LEGO® de antes y ahora.</p>
+            <button class="btnMore"><a href="aniversario.html">Leer más</a></button>           
+        </div>
+    </div>
+
+</section>
+
+<!-- ZONA DE PARTICIPANTES DESTACADOS -->
+
+<section id="zonaParticipantes">
+    
+    <div class="contParticipantes">
+
+        <div class="participantes01">PARTICIPANTES <br><span>DESTACADOS</span>
+            <button class="btnParticipantes"><a href="programacion.html" >Ver programación</a></button>
+        </div>
+
+        <div class="participantes02 card" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="layer">
+                <div class="contenidoLayer">
+                    <h1>Austrian <span>Brick </span>Fan</h1>
+                    <p>Creador de Speed Builds de sets LEGO® nuevos <br>y antiguos.</p>
+                    <div class="redesParticipantes">
+                        <a href="https://www.instagram.com/austrianlegofan/" target="_blank"><img src="img/redes sociales/instagram.png" alt="logo instagram"></a>
+                        <a href="https://twitter.com/AustrianBrick" target="_blank"><img src="img/redes sociales/twitter.png" alt="logo twitter"></a>
+                        <a href="https://www.facebook.com/Austrianlegofan" target="_blank"><img src="img/redes sociales/facebook.png" alt="logo facebook"></a>
+                        <a href="https://www.youtube.com/c/AustrianLegoFan" target="_blank"><img src="img/redes sociales/youtube.png" alt="logo youtube"></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="participantes03 card" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="layer">
+                <div class="contenidoLayer">
+                <h1>Topic<span> Bricks</span></h1>
+                <p>Youtuber centrado exclusivamente en LEGO® y Harry Potter™.</p>
+                    <div class="redesParticipantes">
+                        <a href="https://www.instagram.com/topicbricks/?hl=en" target="_blank"><img src="img/redes sociales/instagram.png" alt="logo instagram"></a>
+                        <a href="https://www.youtube.com/c/TopicBricks/featured" target="_blank"><img src="img/redes sociales/youtube.png" alt="logo youtube"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="participantes04 card" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="layer">
+                <div class="contenidoLayer">
+                    <h1>Crazy <br><span>Gaming </span>Hub</h1>
+                    <p>Youtuber de videojuegos.</p>
+                    <div class="redesParticipantes">
+                        <a href="https://www.instagram.com/_crazygaminghub_/" target="_blank"><img src="img/redes sociales/instagram.png" alt="logo instagram"></a>
+                        <a href="https://twitter.com/CrazyGamingHub" target="_blank"><img src="img/redes sociales/twitter.png" alt="logo twitter"></a>
+                        <a href="https://www.facebook.com/crazygaminghub" target="_blank"><img src="img/redes sociales/facebook.png" alt="logo facebook"></a>
+                        <a href="https://www.youtube.com/c/CrazyGamingHub/featured" target="_blank"><img src="img/redes sociales/youtube.png" alt="logo youtube"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="participantes05 card" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="layer">
+                <div class="contenidoLayer">
+                    <h1>Aura<span> Lopez</span></h1>
+                    <p>Tecnologías, app, gadgets y videojuegos.</p>
+                    <div class="redesParticipantes">
+                        <a href="https://www.instagram.com/aurav/" target="_blank"><img src="img/redes sociales/instagram.png" alt="logo instagram"></a>
+                        <a href="https://twitter.com/Aura_" target="_blank"><img src="img/redes sociales/twitter.png" alt="logo twitter"></a>
+                        <a href="https://www.facebook.com/auralfuturo" target="_blank"><img src="img/redes sociales/facebook.png" alt="logo facebook"></a>
+                        <a href="https://www.youtube.com/c/AuraL%C3%B3pez" target="_blank"><img src="img/redes sociales/youtube.png" alt="logo youtube"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="participantes06 card" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="layer">
+                <div class="contenidoLayer">
+                    <h1>All <span>New</span> Bricks</h1>
+                    <p>Youtuber centrado en el mundo LEGO®.</p>
+                    <div class="redesParticipantes">
+                        <a href="https://www.instagram.com/allnewbricks/" target="_blank"><img src="img/redes sociales/instagram.png" alt="logo instagram"></a>
+                        <a href="https://www.facebook.com/allnewbrick" target="_blank"><img src="img/redes sociales/facebook.png" alt="logo facebook"></a>
+                        <a href="https://www.youtube.com/c/allnewbricks" target="_blank"><img src="img/redes sociales/youtube.png" alt="logo youtube"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="participantes07 card" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="layer">
+                <div class="contenidoLayer">
+                    <h1>Fantástico<span> Plástico</span></h1>
+                    <p>Youtuber centrado al plástico más fantástico del mundo: ¡LEGO®!</p>
+                    <div class="redesParticipantes">
+                        <a href="https://www.instagram.com/fantasticooplasticoo/?utm_medium=copy_link" target="_blank"><img src="img/redes sociales/instagram.png" alt="logo instagram"></a>
+                        <a href="https://www.youtube.com/channel/UCWlw_d2esrc5QF5_DdKgjZA" target="_blank"><img src="img/redes sociales/youtube.png" alt="logo youtube"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="participantes08 card" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="layer">
+                <div class="contenidoLayer">
+                    <h1>Beyond <span>the </span>Brick</h1>
+                    <p>Creador de arte con piezas LEGO®.</p>
+                    <div class="redesParticipantes">
+                        <a href="https://www.instagram.com/beyondthebricktv/" target="_blank"><img src="img/redes sociales/instagram.png" alt="logo instagram"></a>
+                        <a href="https://twitter.com/beyondthebrick" target="_blank"><img src="img/redes sociales/twitter.png" alt="logo twitter"></a>
+                        <a href="https://www.facebook.com/BeyondtheBrickTV" target="_blank"><img src="img/redes sociales/facebook.png" alt="logo facebook"></a>
+                        <a href="https://www.youtube.com/user/BeyondTheBrickTV" target="_blank"><img src="img/redes sociales/youtube.png" alt="logo youtube"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="participantes09 card" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="layer">
+                <div class="contenidoLayer">
+                    <h1>24 <span>Collection</span></h1>
+                    <p>Mi nombre es Albert Lachapelle, tengo 23 años y soy un orgulloso coleccionista de LEGO®.</p>
+                    <div class="redesParticipantes">
+                        <a href="https://www.instagram.com/24collectionxtra/" target="_blank"><img src="img/redes sociales/instagram.png" alt="logo instagram"></a>
+                        <a href="https://www.facebook.com/24collectionxtra" target="_blank"><img src="img/redes sociales/facebook.png" alt="logo facebook"></a>
+                        <a href="https://www.youtube.com/c/24Collection" target="_blank"><img src="img/redes sociales/youtube.png" alt="logo youtube"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="participantes10 card" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="layer">
+                <div class="contenidoLayer">
+                    <h1>Billy <span>Bricks</span></h1>
+                    <p>Creador de stop motion con piezas LEGO®.</p>
+                    <div class="redesParticipantes">
+                        <a href="https://www.instagram.com/billybricksofficial/" target="_blank"><img src="img/redes sociales/instagram.png" alt="logo instagram"></a>
+                        <a href="https://www.youtube.com/channel/UCDsxTRwCkLJACWga07aaYFA" target="_blank"><img src="img/redes sociales/youtube.png" alt="logo youtube"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="participantes11 card" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="layer">
+                <div class="contenidoLayer">
+                    <h1>PopCorn <span>Brick </span><br> Stop Motion<br></h1>
+                    <p>Creador de stop motion con piezas LEGO®.</p>
+                    <div class="redesParticipantes">
+                        <a href="https://www.youtube.com/channel/UC4_3WTt14y0h7W3ln7eMuNw" target="_blank"><img src="img/redes sociales/youtube.png" alt="logo youtube"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="participantes12 card" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="layer">
+                <div class="contenidoLayer">
+                    <h1>Brick<span> Builder</span><br></h1>
+                    <p>Especialista en videos LEGO® Speed Build.</p>
+                    <div class="redesParticipantes">
+                        <a href="https://www.facebook.com/BrickBuilderYT" target="_blank"><img src="img/redes sociales/facebook.png" alt="logo facebook"></a>
+                        <a href="https://www.youtube.com/c/Brickshow23" target="_blank"><img src="img/redes sociales/youtube.png" alt="logo youtube"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      </div>
+      
+</section>
+
+<!--  ZONA DE VIDEOS RECIENTES -->
+
+<section id="zonaVideos">
+
+    <h1 class="tituloSeccion">VIDEOS <span>RECIENTES</span></h1>
+    <button class="btnVideo"><a href="media.html" >Ver videos</a></button>
+
+    <div class="contVideos">
+
+        <div class="video01 video" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="divImg"></div>
+            <div class="contVideo">
+                <small>de Topic Bricks</small>
+                <p class="tituloVideo"><a href="https://youtu.be/tdq3Vc3Zlyg" target="_blank">
+                [NUEVO] LEGO® Harry Potter™ HOGWARTS™ CASTLE ¡Juegos COMBINADOS!</a></p> 
+                <p>¡Bienvenidos a este video donde adjunto el set LEGO® Harry Potter™ Hogwarts™: 
+                Hospital Wing de 2022 a la expansión LEGO® Harry Potter™ Hogwarts™ Castle! 
+                Si tienes alguna sugerencia o crítica, deja un comentario.</p>
+            </div> 
+        </div>
+
+        <div class="video02 video" data-aos="zoom-in" data-aos-duration="1000"> 
+            <div class="contVideo">
+                <small>de Fantástico Plástico</small>
+                <p class="tituloVideo"><a href="https://youtu.be/k6Pn5PaeL1w" target="_blank">
+                [REVIEW] LEGO® Harry Potter™: El Baúl Mágico de Hogwarts™ </a></p> 
+                <p>Aquí os presento uno de mis sets favoritos del año y uno de los más originales de la licencia de Harry Potter™.
+                 ¿Lo tenéis?¿lo queréis tener? Espero que os guste!</p>
+            </div> 
+            <div class="divImg"></div>
+        </div>
+
+        <div class="video03 video" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="divImg"></div>
+            <div class="contVideo">
+                <small>de Austrian Brick Fan</small>
+                <p class="tituloVideo"><a href="https://youtu.be/HFSAK6fU3BU" target="_blank">
+                [REVIEW] LEGO® Harry Potter™: Clase de Defensa contra las Artes Oscuras</a></p> 
+                <p>Review del nuevo set LEGO® Harry Potter™: Clase de Defensa contra las Artes Oscuras.</p>
+            </div> 
+        </div>
+
+        <div class="video04 video" data-aos="zoom-in" data-aos-duration="1000">     
+            <div class="contVideo">
+                <small>de Billy Bricks</small>
+                <p class="tituloVideo"><a href="https://youtu.be/bbdMjlga4mY" target="_blank">
+                [STOP MOTION] LEGO® Harry Potter™: <br>El Sombrero Seleccionador</a></p> 
+                <p>Increíble stop motion de LEGO® Harry Potter™ y la famosa escena del Sombrero Seleccionador.</p>
+            </div> 
+            <div class="divImg"></div>
+        </div>
+
+        <div class="video05 video" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="divImg"></div>
+            <div class="contVideo">
+                <small>de Borjamin Button</small>
+                <p class="tituloVideo"><a href="https://youtu.be/HWM5tYfhKvU" target="_blank">
+                [VIDEOJUEGOS] LEGO® Harry Potter™ 1-4 años: Primera hora del Juego | Parte 1</a></p> 
+                <p>Primera hora del juego LEGO® Harry Potter™ basado en el libro 'Harry Potter y la Piedra Filosofal'.</p>
+            </div> 
+        </div>
+
+      </div>
+</section>
+
+<!--  ZONA DE BANNER SHOP -->
+
+<section id="zonaBannerShop" data-aos="fade-right" data-aos-duration="1500">
+
+  <div class="contenedorTextoBannerShop">
+    <div class="texto">
+        <h1>¡Construye tus momentos Hogwarts™ y recrea la magia con <span>LEGO® Harry Potter™!</span></h1>
+        <p>Vive mágicas aventuras con Harry, Hermione, Ron y todos tus personajes favoritos de Hogwarts™ 
+        (y villanos como Voldemort) con los sets de LEGO® Harry Potter™. Independientemente de la casa a la que pertenezcan 
+        (Gryffindor, Hufflepuff, Ravenclaw o Slytherin), a los peques y a los adultos fans del mundo mágico les fascinan los 
+        sets y las minifiguras coleccionables LEGO®.</p>
+    </div>
+    
+    <button class="btnMore"><a href="https://www.lego.com/es-es/themes/harry-potter" target="_blank">Ver productos</a></button>         
+  </div>
+
+  <div>
+    <img src="img/home/bannerShop/bannerShop.jpeg" alt="Imagen Lego HP" class="imagenShop">
+  </div>
+
+</section>
+
+<!--  ZONA DE NOTICIAS IMPORTANTES -->
+
+<section id="zonaNoticias">
+
+    <div class="contNoticias">
+
+        <div class="noticia01"> NOTICIAS<br><span>DESTACADAS</span>
+        </div>
+
+        <div class="noticia02 noticia" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="divImg"></div>
+            <div class="contNoticia">
+                <small>01/05/2022</small>
+                <p><a href="https://blogdelblock.com/lego/nuevos-sets-de-lego-harry-potter-2022-imagenes-y-detalles/" target="_blank">
+                Nuevos sets completos de LEGO® Harry Potter™ 2022: Imágenes y detalles. ¡No te pierdas ni uno!</a></p>
+            </div>
+        </div>
+
+        <div class="noticia03 noticia" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="divImg"></div>
+            <div class="contNoticia">
+                <small>02/05/2022</small>
+                <p><a href="https://blogdelblock.com/lego/todo-lo-que-tienes-que-saber-del-lego-harry-potter-baul-magico-de-hogwarts-76399/" target="_blank">
+                Todo lo que tienes que saber del LEGO® Harry Potter™ Baúl Mágico de Hogwarts™.</a></p>
+            </div>
+        </div>
+        <div class="noticia04 noticia" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="divImg"></div>
+            <div class="contNoticia">
+                <small>04/05/2022</small>
+                <p><a href="https://blogdelblock.com/lego/set-promocional-lego-harry-potter-hogwarts-gryffindor-dorms-40452-ya-disponible/" target="_blank">
+                    Set promocional LEGO® Harry Potter Hogwarts Gryffindor™ Dorms ya disponible.</a></p>
+            </div>
+        </div>
+
+        <div class="noticia05 noticia" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="divImg"></div>
+            <div class="contNoticia">
+                <small>05/05/2022</small>
+                <p><a href="https://zonared.mundodeportivo.com/noticias/caratulas-oficiales-lego-harry-potter-anos-5-7-anunciadas-warner-bros/" target="_blank">
+                    La carátula oficial de LEGO® Harry Potter™ para PS Vita, anunciada por Warner Bros</a></p>
+            </div>
+        </div>
+
+        <div class="noticia06 noticia" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="divImg"></div>
+            <div class="contNoticia">
+                <small>06/05/2022</small>
+                <p><a href="https://blogdelblock.com/lego/juegos-de-lego-harry-potter-rumoreados-para-2022/" target="_blank">
+                ¡Por fin ya está anunciado! Nuevos sets y videojuegos de LEGO® Harry Potter™ para 2022.</a></p>
+            </div>
+        </div>
+
+        <div class="noticia07 noticia" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="divImg"></div>
+            <div class="contNoticia">
+                <small>07/05/2022</small>
+                <p><a href="https://blogdelblock.com/lego/nuevo-concurso-de-lego-ideas-para-celebrar-20-anos-de-lego-harry-potter/" target="_blank">
+                    Nuevo concurso de LEGO® Ideas para celebrar 20 años de LEGO® Harry Potter™.</a></p>
+            </div>
+        </div>
+
+        <div class="noticia08 noticia" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="divImg"></div>
+            <div class="contNoticia">
+                <small>09/05/2022</small>
+                <p><a href="https://blogdelblock.com/lego/lego-harry-potter-iconos-de-hogwarts-76391-oficialmente-anunciado/" target="_blank">
+                Haz de Hedwing un monumento en tu escritorio: LEGO® Harry Potter™ Iconos de Hogwarts oficialmente anunciado.</a></p>
+            </div>
+        </div>
+        <div class="noticia09 noticia" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="divImg"></div>
+            <div class="contNoticia">
+                <small>10/05/2022</small>
+                <p><a href="https://blogdelblock.com/lego/confirmado-el-lego-harry-potter-monstruoso-libro-de-monstruos-30628-para-enero-como-regalo-con-compra/" target="_blank">
+                ¿Te acuerdas de aquel libro de Monstruos que siempre estaba hambriento? Confirmado el LEGO® Harry Potter™: Monstruoso Libro de Monstruos.</a></p>
+            </div>
+        </div>
+
+        <div class="noticia10 noticia" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="divImg"></div>
+            <div class="contNoticia">
+                <small>11/05/2022</small>
+                <p><a href="https://blogdelblock.com/lego/lego-harry-potter-escritorio-de-hermione-30392-revelado/" target="_blank">
+                ¿Eres un gran estudiante y amante de los animales? ¡Este es tu set! LEGO® Harry Potter™ Escritorio de Hermione</a></p>
+            </div>
+        </div>
+
+        <div class="noticia11 noticia" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="divImg"></div>
+            <div class="contNoticia">
+                <small>12/05/2022</small>
+                <p><a href="https://blogdelblock.com/lego/juego-de-lego-harry-potter-set-de-accesorios-40500-revelado/" target="_blank">
+                Nuevo juego de LEGO® Harry Potter™: Set de Accesorios. ¡Diviértete con este set tan completo! <br> Todos tus personajes favoritos 
+                a tu alcance.</a></p>
+            </div>
+        </div>
+
+        <div class="noticia12 noticia" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="divImg"></div>
+            <div class="contNoticia">
+                <small>13/05/2022</small>
+                <p><a href="https://blogdelblock.com/lego/instrucciones-adicionales-para-el-juego-de-lego-art-harry-potter/" target="_blank">
+                Haz de tus piezas LEGO® una auténtica obra de arte. Instrucciones adicionales para el juego de LEGO® Art Harry Potter™</a></p>
+            </div>
+        </div>
+
+        <div class="noticia13 noticia" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="divImg"></div>
+            <div class="contNoticia">
+                <small>15/05/2022</small>
+                <p><a href="https://zonared.mundodeportivo.com/noticias/lego-harry-potter-collection-filtrado-nintendo-switch/" target="_blank">
+                ¿Estabas harto de esperar? Ya está disponible LEGO® Harry Potter™ Collection filtrado para Nintendo Switch</a></p>
+            </div>
+        </div>
+
+        <div class="noticia14 noticia" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="divImg"></div>
+            <div class="contNoticia">
+                <small>16/05/2022</small>
+                <p><a href="https://blogdelblock.com/lego/video-del-disenador-del-nuevo-lego-harry-potter-callejon-diagon-75978/" target="_blank">
+                ¡Después de mucho tiempo de espera, por fin ya está aqui! Nuevo video del diseño del set LEGO® Harry Potter™ Callejón Diagon.</a></p>
+            </div>
+        </div>
+
+        <div class="noticia15 noticia" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="divImg"></div>
+            <div class="contNoticia">
+                <small>18/05/2022</small>
+                <p><a href="https://blogdelblock.com/lego/juego-de-lego-brickheadz-hagrid-buckbeak-40412-agotado-en-linea/" target="_blank">
+                Nuevo juego de LEGO® BrickHeadz Hagrid & Buckbeak™ totalmente agotado.¡Sólo ha durado dos semanas!</a></p>
+            </div>
+        </div>
+
+        <div class="noticia16 noticia" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="divImg"></div>
+            <div class="contNoticia">
+                <small>19/05/2022</small>
+                <p><a href="https://blogdelblock.com/lego/distribucion-aleatoria-de-2da-serie-de-minifiguras-coleccionables-lego-harry-potter-71028/" target="_blank">
+                Distribución de la Serie de Minifiguras Coleccionables LEGO® Harry Potter™.</a></p>
+            </div>
+        </div>
+
+        <div class="noticia17 noticia" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="divImg"></div>
+            <div class="contNoticia">
+                <small>20/05/2022</small>
+                <p><a href="https://zonared.mundodeportivo.com/noticias/lego-harry-potter-anos-5-7-disponible-ios/" target="_blank">
+                ¿Aburrido en el tren? LEGO® Harry Potter™ Años 5-7 ya está disponible para iOS</a></p>
+            </div>
+        </div>
+
+      </div>
+</section>
+
+<!--  ZONA DE FORO-->
+
+<section id="zonaForo">
+
+  <div class="imagenForo" data-aos="fade-left" data-aos-duration="1500">
+    <img src="img/home/foro/LegoPotter.png" alt="logo Harry Potter" >
+  </div>
+
+  <div class="contenedorTextoBannerForo" data-aos="fade-right" data-aos-duration="1500">
+    <div class="texto" >
+        <h1>¡Accede al <span>LEGO® Potter™</span> Fan Club!</h1>
+        <p>Acércate a la magia todos los días: únete gratis al LEGO® Potter™ Fan Club <br><br>
+        - Participa en la ceremonia oficial de clasificación de Hogwarts™
+        <br>
+        <br>
+        - Recibe las últimas noticias y ofertas en boletines semanales.
+        <br>
+        <br>
+        - Descarga la aplicación LEGO® Potter™ Fan Club gratis.
+    </div>
+    
+    <button class="btnMore"><a href="form-login.html">Acceder</a></button>       
+
+  </div>
+
+</section>
+
+<!--  ZONA DEL FOOTER -->
+
+<section class="footer" id="footer">
+
+    <div class="contain">
+      <div class="colFooter footerAutor">
+          <h1>LEGO® Potter™ | 20 Años de Magia</h1>
+          <h2>Realizado por Laura Adán.</h2>
+          <p>Proyecto Integrado 2022, Grado Superior Gràfica Interactiva | Escola Superior d'Art i Disseny Llotja, Barcelona</p>
+          <hr class="hrFooterAutor">
+      </div>
+  
+      <div class="colFooter logos">
+          <img src="img/logo_Consorci.png" alt="logo Consorci"> 
+          <img src="img/logo_Llotja.png" alt="logo Llotja">
+          <img src="img/logo_Generalitat.png" alt="logo Generalitat">  
+      </div>
+    </div>
+  
+    <div class="newsletterSocial">
+        
+        <div class="colFooter">
+          <div class="newsletter">
+              <h1 class="titleNewsletter">¡Suscríbete a nuestra newsletter y recibe un 20% de descuento en tus productos Lego Harry Potter!</h1>
+              <hr class="hrFooter">
+              <input class="suscribir" type="text" placeholder=" Introduce aquí tu email">
+              <button class="btnSuscribir" onclick="alertSuscribirse();">Suscribirme</button>
+           </div>
+        </div>
+  
+        <div class="colFooter social">
+          <ul>
+              <li><a href="https://twitter.com/_Lego_Potter" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href="https://www.facebook.com/Lego-Potter-112844338059806/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li><a href="https://www.instagram.com/_lego_potter/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="https://www.youtube.com/channel/UChC_WXyWNrYIt2hjx6EoDhw/featured" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+          </ul>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+<!-- ZONA DE SCRIPS -->
+
+
+<!-- Script para Alert boton Footer - Suscribirse -->
+
+<script>
+    function alertSuscribirse(){
+        alert("¡Te has suscrito correctamente!");
+    }
+</script>
+
+<!-- Script de menu nav responsive -->
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="js/menu_nav_responsive.js"></script>
+
+
+<!--  Script para la transformación de la imagen por scroll en el banner -->
+
+<script src="js/scroll_banner.js"></script>
+
+    <!-- Script libreria AOS -->
+    <script src="js/aos.js"></script>
+    <script>AOS.init();
+
+
+    </script>
+
+
+</body>
+</html>

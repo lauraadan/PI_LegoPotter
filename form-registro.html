@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Zona de metadatos  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Proyecto Integrado para el curso 2021-2022 de Grado Superior de Gráfica Interactiva, Escola Llotja (Barcelona)">
+    <meta name="keywords" content="Harry, Potter, Lego, Proyecto, Llotja">
+    <meta name="author" content="Laura Adán">
+    <meta name="copyright" content="Laura Adán">
+    <!-- Hoja de estilos predefinidos (botones, header, footer, titulos...) -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Hoja de estilos de la página -->
+    <link rel="stylesheet" href="css/form-registro.css">
+    <!-- Scripts -->
+    <script src="js/menuOculto.js"></script>
+    <script src="js/btnScroll.js"></script>
+    <!-- Script de Font Awesome para iconos -->
+    <script src="https://kit.fontawesome.com/44915d7dee.js" crossorigin="anonymous"></script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpg" href="img/favicon.png"/>
+    <title>LEGO® Potter™ | Foro</title>
+</head>
+<body>
+
+<!-- ZONA DE ESTRELLAS APLICADO A TODO EL BODY -->
+
+<video src="img/stars01.mp4" id="videoBackground" autoplay loop muted width="100%"></video>
+
+<!-- ZONA DEL BOTON SCROLL -->
+
+<div id="top">
+    <a href="#"><i class="fa-solid fa-circle-arrow-up"></i></a>
+</div>
+    
+<!-- ZONA DEL NAVEGADOR -->
+
+<header id="navbar">
+
+        <nav id="barraMenu">
+            <ul id="menu">
+            <li class="elemMenu"><a href="home.html">Inicio</a></li>
+            <li class="elemMenu"><a href="aniversario.html">20 Aniversario</a></li>
+            <li class="elemMenu"><a href="programacion.html">Programación</a></li>
+            <li class="elemMenu"><a href="media.html">Vídeos</a></li>
+            <li class="elemMenu"><a href="https://www.lego.com/es-es/themes/harry-potter" target="_blank">Tienda</a></li>           
+        </ul>
+
+        <ul class="foro">
+            <li class="elemBtn"><a href="form-login.html" class="btnForo">FORO</a></li>
+        </ul>
+
+            <div class="hide">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            
+        </nav>   
+
+</header>
+
+
+
+<!--  Zona DE FORMULARIO FORO -->
+
+<section id="registro">
+
+    <form method="post" action="" class="form-registro">
+    <h1 class="tituloSeccion">Crea tu cuenta</h1>
+    <hr class="hrTitle">
+
+    	<div class="datosContacto">
+            <input type="text" name="nombre" placeholder="Nombre" class="input-50" required>
+			<input type="text" name="apellidos" placeholder="Apellidos" class="input-50" required>
+			<input type="email" name="correo" placeholder="Email" class="input-100" required>
+			<input type="text" name="usuario" placeholder="Usuario" class="input-50" required>
+			<input type="password" name="clave" placeholder="Contraseña" class="input-50" required>
+            <input type="submit" value="Crea tu cuenta" required class="btn-enviar">
+        	<p class="mensaje">¿Ya estás registrado?<a href="form-login.html">Acceder.</a></p>
+		</div>
+
+   	</form>	
+
+</section>
+
+
+
+<!--  ZONA DEL FOOTER -->
+<section class="footer" id="footer">
+
+  <div class="contain">
+    <div class="colFooter footerAutor">
+        <h1>LEGO® Potter™ | 20 Años de Magia</h1>
+        <h2>Realizado por Laura Adán.</h2>
+        <p>Proyecto Integrado 2022, Grado Superior Gràfica Interactiva | Escola Superior d'Art i Disseny Llotja, Barcelona</p>
+        <hr class="hrFooterAutor">
+    </div>
+
+    <div class="colFooter logos">
+        <img src="img/logo_Consorci.png" alt="logo Consorci"> 
+        <img src="img/logo_Llotja.png" alt="logo Llotja">
+        <img src="img/logo_Generalitat.png" alt="logo Generalitat">  
+    </div>
+  </div>
+
+  <div class="newsletterSocial">
+      
+      <div class="colFooter">
+        <div class="newsletter">
+            <h1 class="titleNewsletter">¡Suscríbete a nuestra newsletter y recibe un 20% de descuento en tus productos Lego Harry Potter!</h1>
+            <hr class="hrFooter">
+            <input class="suscribir" type="text" placeholder=" Introduce aquí tu email">
+            <button class="btnSuscribir" onclick="alertSuscribirse();">Suscribirme</button>
+         </div>
+      </div>
+
+      <div class="colFooter social">
+        <ul>
+            <li><a href="https://twitter.com/_Lego_Potter" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://www.facebook.com/Lego-Potter-112844338059806/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com/_lego_potter/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UChC_WXyWNrYIt2hjx6EoDhw/featured" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Script para Alert boton Footer - Suscribirse -->
+<script>
+    function alertSuscribirse(){
+        alert("¡Te has suscrito correctamente!");
+    }
+</script>
+
+<!-- Script de menu nav responsive -->
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="js/menu_nav_responsive.js"></script>
+
+
+</body>
+</html>

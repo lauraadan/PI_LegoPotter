@@ -1,0 +1,111 @@
+
+
+/* Zona de estilos predefinidos solo en esta pagina */
+
+.hrTitle
+{
+    width: 400px;
+    border-color: var(--amarillo);
+    margin-bottom: 20px;
+}
+ 
+
+/*  Texto predefinido*/
+
+.infoTexto
+{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 70px;
+    color: #fff;
+}
+
+.infoTextoTitulo
+{
+    color: #fff;
+}
+
+.infoTextoTitulo h1
+{
+    font-size: 2em;
+    margin: 20px 0px;
+}
+
+.infoTextoTitulo .subtitulo
+{
+    font-size: 23px;
+}
+
+.infoTextoTitulo h3, h4
+{
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.infoTextoParrafo p, h3
+{
+    font-size: 20px;
+}
+
+
+/* ZONA DE ABOUT US */
+
+#aniversario
+{
+    height: auto;
+    background-color: #0d1316bd;
+    padding: 100px 80px;
+    margin: 0px 50px;
+    outline: 1px solid var(--morado2);
+    outline-offset: -20px;
+}
+
+.infoTextoParrafo a
+{
+    color: var(--amarillo);
+    text-decoration: none;
+}
+
+.infoTextoParrafo a:hover
+{
+    color: var(--hover2);
+}
+
+
+/* MEDIA QUERIES */
+
+/*  TABLET ESTÁNDAR - OK  */
+
+@media only screen and (max-width: 768px)
+{
+    #aniversario
+    {
+        margin: 0px 30px 100px 30px;
+        padding: 80px 40px;
+    }
+}
+
+
+/* MOVIL ESTANDAR - OK */
+  
+@media only screen and (max-width: 400px)
+{
+    #aniversario
+    {
+        width: 70%;
+        margin: 0px 20px 100px 20px;
+    }
+    .hrTitle 
+    {
+        width: 200px;
+    }
+}
+
+
+
+
+
+
+
